@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   //run ajax to select events from database
   $.ajax({
-    url: "/api/calendar/events",
+    url: "/api/calendar/events/",
     method: "GET"
   }).then(function(data, status) {
     console.log(data);

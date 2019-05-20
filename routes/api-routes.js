@@ -61,11 +61,11 @@ module.exports = function (app) {
     }
   });
 
-  app.get("/api/calendar/events", function (req, res) {
+  app.get("/api/calendar/events/", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
-  app.get("/api/calendar/events", function (req, res) {
+  app.get("/api/calendar/events/", function (req, res) {
     // findAll returns all entries for a table when used with no options
     db.events.findAll({ }).then(function (dbEvents) {
       console.log(dbEvents);
