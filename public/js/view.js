@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   //run ajax to select events from database
   $.ajax({
-    url: "/api/events",
+    url: "/api/calendar/events",
     method: "GET"
   }).then(function(data, status) {
     console.log(data);
@@ -34,7 +34,7 @@ $(document).ready(function () {
         var id = event.id;
         console.log("post-format start=" + start + ", end=" + end);
         $.ajax({
-          url: "/api/events/",
+          url: "/api/calendar/events/",
           type: "POST",
           data: {id:id, title: title, start: start, end: end },
           success: function () {
@@ -53,7 +53,7 @@ $(document).ready(function () {
       var title = event.title;
       var id = event.id;
       $.ajax({
-        url: "/api/events",
+        url: "/api/calendar/events",
         type: "POST",
         data: { id: id, title: title, start: start, end: end },
         success: function () {
@@ -71,7 +71,7 @@ $(document).ready(function () {
       var title = event.title;
       var id = event.id;
       $.ajax({
-        url: "/api/events",
+        url: "/api/calendar/events",
         type: "POST",
         data: { id: id, title: title, start: start, end: end },
         success: function () {
@@ -86,7 +86,7 @@ $(document).ready(function () {
         var id = event.id;
         console.log("var id="+id);
         $.ajax({
-          url: "/api/events/"+id,
+          url: "/api/calendar/events/"+id,
           type: "DELETE",
           
           success: function () {

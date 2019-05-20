@@ -1,0 +1,71 @@
+body {
+    background-image: url(../images/LandingPageGraphics/landing_bkground.png);
+    background-repeat: no-repeat;
+  }
+
+.logo{
+  position: relative;
+  left: 85px;
+  top: 250px;
+  z-index: 1;
+}
+
+.logo2{
+  position: relative;
+  left: 450px;
+  width: 125px;
+  top:0px;
+}
+
+
+
+.lines{
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+
+.mb-4, .my-4 {
+  position: absolute;
+  left: 600px;
+}
+
+
+
+.form-control{
+    position: relative;
+    left: 0px;
+    top: 20px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px;
+    border-bottom-color: rgb(228, 225, 225);
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+   
+}
+
+
+
+.form-check-input, .form-check-label{
+    position: relative;
+    left: 0px;
+    top: 75px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(199, 196, 196);
+}
+
+
+.btn-primary{
+    position: relative;
+    left: 0px;
+    top: 100px;
+    background-color: #FF6633;
+    border: none;
+    padding:10px;
+    width: 150px;
+}

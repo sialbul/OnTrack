@@ -1,0 +1,122 @@
+.logo2{
+    width:150px;
+}
+
+.navbar{
+    font-family: 'Source Sans Pro', sans-serif;
+     
+}
+
+.profileSidebarBg{
+    z-index: -99;
+    position: fixed;
+    left: 0px;
+    width: 300px;
+    height: max-content;
+}
+
+
+#calendar{
+    width: 750px;
+    height: 400px;
+    margin-bottom: 150px;
+  }
+  
+.header#name{
+    position: relative;
+    top: -95px;
+    left: 75px;
+    font-size: 1.5em;
+}
+
+img.profilePic{
+    position: relative;
+    top: 80px;
+    left: 60px;
+    z-index: 1;
+
+}
+
+.arrow{
+    position: relative;
+    left: 135px;
+}
+
+
+
+
+ #statCardInputWrapper{
+    width: 68em;
+    padding: 5px;
+    position: relative;
+    top: 25px;
+    left: -4px;
+}
+
+  
+
+
+
+.nameSideBarBg{
+    left: -168px;
+    position: relative;
+    top: -42px;
+}
+
+
+
+
+.DOB{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    font-size: 1.5em;
+}
+
+#DOB{
+    position: relative;
+    top: 120px;
+    left: 73px;
+    font-size: 1.3em;
+}
+
+
+.healthPlan{
+    position: relative;
+    top: 150px;
+    left: 66px;
+    font-size: 1.5em;
+}
+
+#healthPlan{
+    position: relative;
+    top: 170px;
+    left: 30px;
+    font-size: 1.3em;
+}
+
+.PCP{
+    position: relative;
+    top: 200px;
+    left: 15px;
+    font-size: 1.5em;
+    
+}
+
+#PCP{
+    position: relative;
+    top: 225px;
+    left: 80px;
+    font-size: 1.3em;
+}
+
+.shopcard-body{
+    position: relative;
+    top: -380px;
+    left: 1145px;
+}
+
+ul{
+    list-style-image: url('../images/DashBoardGraphics/heartIcon.png');  
+}
+

@@ -1,0 +1,42 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+#loginFrom {margin-left: 350px;
+
+}
+
+
+body {
+  background-image: url(../images/LandingPageGraphics/landing_bkground.png);
+  background-repeat: no-repeat;
+}
+
+.logo{
+position: relative;
+left: 85px;
+top: 250px;
+z-index: 1;
+}
+
+.logo2{
+  position: relative;
+  left: 450px;
+  width: 125px;
+  top: 100px;
+
+}
+
+
+.lines{
+position: absolute;
+left: 0px;
+top: 0;
+}
+
+.mb-4, .my-4 {
+position: absolute;
+left: 600px;
+}
+

@@ -1,5 +1,5 @@
-Create database testing;
-use testing;
+Create database Ontrack;
+use Ontrack;
 
 CREATE TABLE IF NOT EXISTS events
 (
@@ -9,3 +9,4 @@ CREATE TABLE IF NOT EXISTS events
   end datetime NOT NULL,
   primary key (id)
 ) ;
+
