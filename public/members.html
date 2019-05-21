@@ -6,17 +6,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-
-
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/members.css" media="screen" title="no title" charset="utf-8">
-
-
 
   <title>My Dashboard</title>
 </head>
@@ -24,7 +17,7 @@
 <body>
   <div id="dashboard">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <img class="logo2" src="images/LandingPageGraphics/logo2.png" alt="logo2">
+      <img class="logo2" src="images/LandingPageGraphics/logo2.png" id="logo2">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -43,25 +36,24 @@
     </nav>
     <br><br>
     <div class="row">
-      <div class="col">
+      <div class="col-sm-3">
 
         <div class="patientSidebar">
           <img class="profilePic" id="profilePic" src="images/DashBoardGraphics/Avatar.png" alt="pic">
-          <img class="arrow" src="images/DashBoardGraphics/flyout arrow.png" alt="pic">
-          <img class="profileSidebarBg" src="images/DashBoardGraphics/Sidebar.BG.png" alt="pic">
-          <h2 class="header" id="name">Thomas K</h2>
+          <h2 class="header" id="name">Efe B.</h2>
 
           <h3 class="DOB">DOB</h3>
           <h4 id="DOB">01/01/1990</h4>
+          <hr>
 
           <h3 class="healthPlan">Health Plan</h3>
           <h4 id="healthPlan">Blue Cross Blue Shield</h4>
-
+          <hr>
           <h3 class="PCP">Primary Care Physician</h3>
           <h4 id="PCP">Dr. Ken Rao</h4>
         </div>
       </div>
-      <div class="col">
+      <div class="col-sm-9">
 
         <div class="row">
 
@@ -71,7 +63,7 @@
                 Quote of the Day
               </div>
               <div class="card-body">
-                <blockquote class="blockquote mb-0">
+                <blockquote class="blockquote mb-0" id="block">
                   <p>The only man who makes no mistakes is the man who never does anything.</p>
                   <footer class="blockquote-footer">Eleanor Roosevelt <cite title="Source Title"></cite></footer>
                 </blockquote>
@@ -81,193 +73,13 @@
         </div>
         <br>
         <div class="row">
-          <div class="card-header">
-            Your Calendar </div>
-          <br>
-          <br>
-          <br>
           <div class="container">
             <div id="calendar"></div>
           </div>
 
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-        <div class="row">
-
-          <div class="col-sm-6">
-            <div class="medicationCard">
-              <div class="card" style="width: 15rem;">
-                <div class="card-header">
-                  Medications
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
-                  <li a href="#" class="btn btn-primary">Refill Rx</li></a>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div id="cardStat" style="width: 15rem;">
-              <div class="card-header">
-                My Readings
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-
-              </ul>
-
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="row">
-
-          <div class="statCardInput" id="statCardInputWrapper">
-            <div class="card-header">
-              My Readings
-            </div>
-            <div class="healthTracker healtTrackerInput" id="healtTrackerInputForm">
-              <form>
-                <div class="form-group" class="creator">
-                  <label for="category">Please select the type of entry you would like to make:</label>
-                  <select id="selectEntryType" class="form-control" class="category">
-                    <option value="rx">Prescription Note</option>
-                    <option value="md">Doctor Note</option>
-                    <option value="mh">Mental Health Note</option>
-                    <option value="ex">Exercise Log</option>
-                    <option value="fd">Food Log</option>
-                    <option value="bp">Blood Pressure</option>
-                  </select>
-                </div>
-                <!-- Prescription Form Inputs -->
-                <div id="prescriptionInputs">
-                  <div class="form-group">
-                    <label for="rxName">Prescription Name</label>
-                    <input type="text" class="form-control" class="rxName" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="rxDose">Dosage</label>
-                    <input type="text" class="form-control" class="rxDose" placeholder="">
-                  </div>
-                </div>
-                <!-- Doctor Form Inputs -->
-                <div id="doctorsNotesInputs">
-                  <div class="form-group">
-                    <label for="mdName">Doctor Name</label>
-                    <input type="text" class="form-control" class="mdName" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="mdLocation">Doctor Location</label>
-                    <input type="text" class="form-control" class="mdLocation" placeholder="">
-                  </div>
-                </div>
-                <!-- Mental Health Form Inputs -->
-                <div id="mentalHealthNotesInputs">
-                  <div class="form-group">
-                    <label for="mhDate">Date</label>
-                    <input type="date" class="form-control" class="mhDate" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="currentMood">Current Mood</label>
-                    <input type="text" class="form-control" class="currentMood" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="mhText">Free Format Text Area</label>
-                    <textarea class="form-control" class="mhText" rows="3"></textarea>
-                  </div>
-                </div>
-                <!-- Exercise Form Inputs -->
-                <div id="exerciseNotesInputs">
-                  <div class="form-group">
-                    <label for="exerciseDate">Date</label>
-                    <input type="date" class="form-control" class="exerciseDate" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exerciseType">Type of Exercise</label>
-                    <input type="text" class="form-control" class="exerciseType" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exerciseDuration">Duration (minutes)</label>
-                    <input type="integer" class="form-control" class="exerciseDuration" placeholder="">
-                  </div>
-                </div>
-                <!-- Food Form Inputs -->
-                <div id="foodNotesInputs">
-                  <div class="form-group">
-                    <label for="foodDate">Date</label>
-                    <input type="date" class="form-control" class="foodDate" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="mealType">Meal</label>
-                    <select class="form-control" class="mealType">
-                      <option value="Breakfast">Breakfast</option>
-                      <option value="Lunch">Lunch</option>
-                      <option value="Dinner">Dinner</option>
-                      <option value="Snack">Snack</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="foodName">Name of Food</label>
-                    <input type="text" class="form-control" class="foodName" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="foodCal">Calorie Count</label>
-                    <input type="integer" class="form-control" class="foodCal" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="foodSug">Sugar Count (g)</label>
-                    <input type="integer" class="form-control" class="foodSug" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="foodSalt">Sodium Count (mg)</label>
-                    <input type="integer" class="form-control" class="foodSalt" placeholder="">
-                  </div>
-                </div>
-                <!-- Blood Pressure Form Inputs -->
-                <div id="bloodPressureNotesInputs">
-                  <div class="form-group">
-                    <label for="bpDate">Date</label>
-                    <input type="date" class="form-control" class="bpDate" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="bpSystolic">Systolic</label>
-                    <input type="integer" class="form-control" class="bpSystolic" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="bpDiastolic">Diastolic</label>
-                    <input type="integer" class="form-control" class="bpDiastolic" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="bpPulse">Pulse</label>
-                    <input type="integer" class="form-control" class="bpPulse" placeholder="">
-                  </div>
-                </div>
-                <button id="saveToServer" class="btn btn-primary" class="add_creator" type="button">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
-  </div>
-
-  </div>
-
-  </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>

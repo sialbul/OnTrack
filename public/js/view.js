@@ -38,10 +38,14 @@ $(document).ready(function () {
           type: "POST",
           data: {id:id, title: title, start: start, end: end },
           success: function () {
+            console.log("fullcalendar.select /api/calendar/events success");
             calendar.fullCalendar('refetchEvents');
             
             alert("Added Successfully");
 
+          },
+          error: function(){
+            console.log("calendar error");
           }
         })
       }
