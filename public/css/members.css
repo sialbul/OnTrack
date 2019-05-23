@@ -4,29 +4,55 @@
 
 .navbar{
     font-family: 'Source Sans Pro', sans-serif;
-     
 }
+
 p {
     font-size: 16px;
+}
+.medicationCard{
+width: 100%;
+margin: 150px 0px 20px 0;
+}
+#cardStat{
+    width: 100%;
+    margin: 150px 0px 20px 0;
 }
 #head {
     text-align: center;
 }
-#logo2 {padding-left: 10px;}
 
-li {padding: 5px;
-padding-left: 25px;}
+#logo2 {
+    padding-left: 10px;
+}
+
+li {
+    padding: 5px;
+padding-left: 25px;
+}
+
 #calendar{
     width: 750px;
     height: 350px;
     margin-bottom: 150px;
   }
+
+
+#statCardInputWrapper{
+    width: 70%;
+    margin-bottom: 20px;
+}
+#healthPart{
+    width: 750px;
+}
+
+
+  
 .patientSidebar {
-    background-image: url(../images/LandingPageGraphics/landing_bkground.png);
+background-image: url(../images/LandingPageGraphics/landing_bkground.png);
 height: 800px;
 text-align: center;
-
 }  
+
 #block{
     height: 50px;
 }
@@ -36,12 +62,14 @@ ul{
 }
 
 .patientSidebar {padding: 10px;
-width: 300px;}
+width: 300px;
+}
 
 .quoteSection{
     width:800px;
     margin-bottom: 20px;
 }
+
 #profilePic{
     margin: 20px;
 }
