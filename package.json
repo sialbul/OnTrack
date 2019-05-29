@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CrystalRoper/Project-2.git"
+    "url": "git+https://github.com/sialbul/Project2.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CrystalRoper/Project-2/issues"
+    "url": "https://github.com/sialbul/Project2/issues"
   },
-  "homepage": "https://github.com/CrystalRoper/Project-2#readme",
+  "homepage": "https://github.com/sialbul/Project2#readme",
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
