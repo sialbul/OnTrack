@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "xljo0fzl5ga5qemb",
-    "password": "ghb2jjlscq6mh61f",
+    "password": "",
     "database": "i8qksfjkhpju15t0",
     "host": "e764qqay0xlsc4cz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
@@ -17,7 +17,7 @@
   },
   "production": {
     "username": "xljo0fzl5ga5qemb",
-    "password": "ghb2jjlscq6mh61f",
+    "password": "",
     "database": "i8qksfjkhpju15t0",
     "host": "e764qqay0xlsc4cz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
