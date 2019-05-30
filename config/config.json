@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "Efemir.2010",
-    "database": "Ontrack",
-    "host": "127.0.0.1",
+    "username": "ar0e7ognnfc2qzta",
+    "password": "ghb2jjlscq6mh61f",
+    "database": "i8qksfjkhpju15t0",
+    "host": "e764qqay0xlsc4cz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   },
