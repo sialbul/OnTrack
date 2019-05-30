@@ -24,10 +24,6 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-        </form>
         <a class="nav-link" href="/logout">
           Logout
         </a>
@@ -79,162 +75,165 @@
 
         </div>
         <div class="row" id="healthPart">
-            <div class="col">
-              <div class="medicationCard">
-                <div class="card">
-                  <div class="card-header">
-                    Medications
-                  </div>
-                  <ul id="displayPrescriptions" class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                    <li a href="#" class="btn btn-primary">Refill Rx</li></a>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div id="cardStat" class="card">
+          <div class="col-md-6">
+            <div class="medicationCard">
+              <div class="card">
                 <div class="card-header">
-                  My Readings
+                  Medications
                 </div>
-                <ul id="displaySelectedEntries" class="list-group list-group-flush">
+                <ul id="displayPrescriptions" class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                  <li a href="#" class="btn btn-primary">Refill Rx</li></a>
                 </ul>
-
               </div>
-            </div>
-        </div>
-      </div>
-        <div class="row" id="medicalPart">
-
-          <div class="statCardInput" id="statCardInputWrapper">
-            <div class="card-header">
-              My Readings
-            </div>
-            <br>
-            <div class="healthTracker healtTrackerInput" id="healtTrackerInputForm">
-              <form>
-                <div class="form-group" class="creator">
-                  <label for="category">Please select the type of entry you would like to make:</label>
-                  <br>
-                  <select id="selectEntryType" class="form-control" class="category">
-                    <option value="rx">Prescription Note</option>
-                    <option value="md">Doctor Note</option>
-                    <option value="mh">Mental Health Note</option>
-                    <option value="ex">Exercise Log</option>
-                    <option value="fd">Food Log</option>
-                    <option value="bp">Blood Pressure</option>
-                  </select>
-                </div>
-                <!-- Prescription Form Inputs -->
-                <div id="prescriptionInputs">
-                  <div class="form-group">
-                    <label for="rxName">Prescription Name</label>
-                    <input type="text" id="rxName" class="form-control" class="rxName" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="rxDose">Dosage</label>
-                    <input type="text" id="rxDose" class="form-control" class="rxDose" placeholder="">
-                  </div>
-                </div>
-                <!-- Doctor Form Inputs -->
-                <div id="doctorsNotesInputs">
-                  <div class="form-group">
-                    <label for="mdName">Doctor Name</label>
-                    <input type="text" id="mdName" class="form-control" class="mdName" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="mdLocation">Doctor Location</label>
-                    <input type="text" id="mdLocation" class="form-control" class="mdLocation" placeholder="">
-                  </div>
-                </div>
-                <!-- Mental Health Form Inputs -->
-                <div id="mentalHealthNotesInputs">
-                  <div class="form-group">
-                    <label for="mhDate">Date</label>
-                    <input type="date" id="mhDate" class="form-control" class="mhDate" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="currentMood">Current Mood</label>
-                    <input type="text" id="currentMood" class="form-control" class="currentMood" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="mhText">Free Format Text Area</label>
-                    <textarea id="mhNote" class="form-control" class="mhNote" rows="3"></textarea>
-                  </div>
-                </div>
-                <!-- Exercise Form Inputs -->
-                <div id="exerciseNotesInputs">
-                  <div class="form-group">
-                    <label for="exerciseDate">Date</label>
-                    <input type="date" id="exerciseDate" class="form-control" class="exerciseDate" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exerciseType">Type of Exercise</label>
-                    <input type="text" id="exerciseType" class="form-control" class="exerciseType" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exerciseDuration">Duration (minutes)</label>
-                    <input type="integer" id="exerciseDuration" class="form-control" class="exerciseDuration"
-                      placeholder="">
-                  </div>
-                </div>
-                <!-- Food Form Inputs -->
-                <div id="foodNotesInputs">
-                  <div class="form-group">
-                    <label for="foodDate">Date</label>
-                    <input type="date" id="foodDate" class="form-control" class="foodDate" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="mealType">Meal</label>
-                    <select id="mealType" class="form-control" class="mealType">
-                      <option value="Breakfast">Breakfast</option>
-                      <option value="Lunch">Lunch</option>
-                      <option value="Dinner">Dinner</option>
-                      <option value="Snack">Snack</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="foodName">Name of Food</label>
-                    <input type="text" id="foodName" class="form-control" class="foodName" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="foodCal">Calorie Count</label>
-                    <input type="integer" id="foodCal" class="form-control" class="foodCal" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="foodSug">Sugar Count (g)</label>
-                    <input type="integer" id="foodSug" class="form-control" class="foodSug" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="foodSalt">Sodium Count (mg)</label>
-                    <input type="integer" id="foodSalt" class="form-control" class="foodSalt" placeholder="">
-                  </div>
-                </div>
-                <!-- Blood Pressure Form Inputs -->
-                <div id="bloodPressureNotesInputs">
-                  <div class="form-group">
-                    <label for="bpDate">Date</label>
-                    <input type="date" id="bpDate" class="form-control" class="bpDate" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="bpSystolic">Systolic</label>
-                    <input type="integer" id="bpSystolic" class="form-control" class="bpSystolic" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="bpDiastolic">Diastolic</label>
-                    <input type="integer" id="bpDiastolic" class="form-control" class="bpDiastolic" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="bpPulse">Pulse</label>
-                    <input type="integer" id="bpPulse" class="form-control" class="bpPulse" placeholder="">
-                  </div>
-                </div>
-                <button id="saveToServer" class="btn btn-primary" class="add_creator" type="button">Submit</button>
-              </form>
             </div>
           </div>
+          <div class="col-md-6">
+            <div id="cardStat" class="card">
+              <div class="card-header">
+                My Readings
+              </div>
+              <ul id="displaySelectedEntries" class="list-group list-group-flush">
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <div id="medicalPart">
+            <div class="statCardInput" id="statCardInputWrapper">
+              <div class="card-header">
+                My Readings
+              </div>
+              <br>
+              <div class="healthTracker healtTrackerInput" id="healtTrackerInputForm">
+                <form>
+                  <div class="form-group" class="creator">
+                    <label for="category">Please select the type of entry you would like to make:</label>
+                    <br>
+                    <select id="selectEntryType" class="form-control" class="category">
+                      <option value="rx">Prescription Note</option>
+                      <option value="md">Doctor Note</option>
+                      <option value="mh">Mental Health Note</option>
+                      <option value="ex">Exercise Log</option>
+                      <option value="fd">Food Log</option>
+                      <option value="bp">Blood Pressure</option>
+                    </select>
+                  </div>
+                  <!-- Prescription Form Inputs -->
+                  <div id="prescriptionInputs">
+                    <div class="form-group">
+                      <label for="rxName">Prescription Name</label>
+                      <input type="text" id="rxName" class="form-control" class="rxName" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="rxDose">Dosage</label>
+                      <input type="text" id="rxDose" class="form-control" class="rxDose" placeholder="">
+                    </div>
+                  </div>
+                  <!-- Doctor Form Inputs -->
+                  <div id="doctorsNotesInputs">
+                    <div class="form-group">
+                      <label for="mdName">Doctor Name</label>
+                      <input type="text" id="mdName" class="form-control" class="mdName" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="mdLocation">Doctor Location</label>
+                      <input type="text" id="mdLocation" class="form-control" class="mdLocation" placeholder="">
+                    </div>
+                  </div>
+                  <!-- Mental Health Form Inputs -->
+                  <div id="mentalHealthNotesInputs">
+                    <div class="form-group">
+                      <label for="mhDate">Date</label>
+                      <input type="date" id="mhDate" class="form-control" class="mhDate" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="currentMood">Current Mood</label>
+                      <input type="text" id="currentMood" class="form-control" class="currentMood" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="mhText">Free Format Text Area</label>
+                      <textarea id="mhNote" class="form-control" class="mhNote" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <!-- Exercise Form Inputs -->
+                  <div id="exerciseNotesInputs">
+                    <div class="form-group">
+                      <label for="exerciseDate">Date</label>
+                      <input type="date" id="exerciseDate" class="form-control" class="exerciseDate" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="exerciseType">Type of Exercise</label>
+                      <input type="text" id="exerciseType" class="form-control" class="exerciseType" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="exerciseDuration">Duration (minutes)</label>
+                      <input type="integer" id="exerciseDuration" class="form-control" class="exerciseDuration"
+                        placeholder="">
+                    </div>
+                  </div>
+                  <!-- Food Form Inputs -->
+                  <div id="foodNotesInputs">
+                    <div class="form-group">
+                      <label for="foodDate">Date</label>
+                      <input type="date" id="foodDate" class="form-control" class="foodDate" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="mealType">Meal</label>
+                      <select id="mealType" class="form-control" class="mealType">
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                        <option value="Snack">Snack</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="foodName">Name of Food</label>
+                      <input type="text" id="foodName" class="form-control" class="foodName" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="foodCal">Calorie Count</label>
+                      <input type="integer" id="foodCal" class="form-control" class="foodCal" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="foodSug">Sugar Count (g)</label>
+                      <input type="integer" id="foodSug" class="form-control" class="foodSug" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="foodSalt">Sodium Count (mg)</label>
+                      <input type="integer" id="foodSalt" class="form-control" class="foodSalt" placeholder="">
+                    </div>
+                  </div>
+                  <!-- Blood Pressure Form Inputs -->
+                  <div id="bloodPressureNotesInputs">
+                    <div class="form-group">
+                      <label for="bpDate">Date</label>
+                      <input type="date" id="bpDate" class="form-control" class="bpDate" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="bpSystolic">Systolic</label>
+                      <input type="integer" id="bpSystolic" class="form-control" class="bpSystolic" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="bpDiastolic">Diastolic</label>
+                      <input type="integer" id="bpDiastolic" class="form-control" class="bpDiastolic" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="bpPulse">Pulse</label>
+                      <input type="integer" id="bpPulse" class="form-control" class="bpPulse" placeholder="">
+                    </div>
+                  </div>
+                  <button id="saveToServer" class="btn btn-primary" class="add_creator" type="button">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
