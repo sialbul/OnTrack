@@ -14,6 +14,7 @@ User also can take notes about;
 - Food Log (Date, Meal, Name of Food, Calorie Count, Sugar Count, Sodium Count)
 - Blood Pressure (Date, Systolic, Diastolic, Pulse).
 
+---
 **HTML, CSS, JavaScript, jQuery, Node, MySql, Heroku**
  
 NPM Packages used in this project
