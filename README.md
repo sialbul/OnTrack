@@ -2,7 +2,7 @@
 
 OnTrack was conceived of as a health application to assist people with medical issues and concerns to keep track of their medical information. 
 
-User needs to log in to visit website. In the side, User can add events and data to calendar and can view daily, weekly, monthly.
+User needs to log in to visit website. In the webside, User can add events and data to calendar and can view daily, weekly, monthly.
 User also can take notes about;
 - Prescription (Prescription Name and Dosage)
 - Doctor (Doctor Name and Location)
